@@ -94,7 +94,7 @@ export default function VerifyMobileRegister() {
             </div>
             <div>
               <p id={styles.otpText}>
-                Didn't receive OTP.
+                Didn&apos;t receive OTP.
                 <span className={styles.resend}> Click to Resend</span>
               </p>
             </div>
