@@ -187,7 +187,7 @@ export default function LicenseTab({ setCompleted, handleNexTab }: Props) {
                   {" "}
                   <option>Select Country</option>
                   {countryData.records.map((data) => (
-                    <option value={data.id}>{data.name}</option>
+                    <option key={data.id} value={data.id}>{data.name}</option>
                   ))}
                 </select>
               )}

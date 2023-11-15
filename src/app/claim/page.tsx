@@ -224,7 +224,7 @@ export default function ClaimCompany() {
                     {" "}
                     <option>Select Country</option>
                     {countryData.records.map((data) => (
-                      <option value={data.id}>{data.name}</option>
+                      <option key={data.id} value={data.id}>{data.name}</option>
                     ))}
                   </select>
                 )}

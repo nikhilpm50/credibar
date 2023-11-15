@@ -78,7 +78,7 @@ export default function CompanyList() {
             <div className={styles.companyMain}>
               <div className={styles.companyList}>
                 {cardDetails.map((data, idx) => (
-                  <div
+                  <div key={data.name}
                     className={
                       collapse ? styles.companyCardCollapse : styles.companyCard
                     }

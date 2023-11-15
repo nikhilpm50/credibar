@@ -115,7 +115,7 @@ export default function SignIn() {
           </div>
           <div className={styles.registerSec}>
             <p className={styles.accountText}>
-              Don't have an account ?{" "}
+              Don't have an account ?
               <Link href="register">
                 <span className={styles.regButton}>Register Now</span>
               </Link>
