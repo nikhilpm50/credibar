@@ -9,6 +9,7 @@ import BasicBusinessRegTab from "@/components/basicBusinessRegTab/layout";
 import LicenseTab from "@/components/licenseTab/layout";
 import Image from "next/image";
 import complete from "../../assets/success.png";
+import AdditionalBusinessTab from "@/components/additionalBusinessTab/layout";
 
 export default function RegisterCompany() {
   const router = useRouter();
@@ -23,13 +24,32 @@ export default function RegisterCompany() {
 
   const handlePreviousTab = () => {
     setCurrentTab(currentTab - 1);
+    if (currentTab === 2) {
+      setThirdCompleted(false);
+    } else if (currentTab === 1) {
+      setSecCompleted(false);
+    } else {
+      setCompleted(false);
+    }
+  };
+
+  const handleprogressSkip = () => {
+    if (currentTab === 2) {
+      setThirdCompleted(false);
+    } else if (currentTab === 1) {
+      setSecCompleted(false);
+    } else {
+      setCompleted(false);
+    }
   };
 
   return (
     <div className={styles.main}>
       <Navbar />
       <div className={styles.body}>
-        <button onClick={() => router.push("/companyRegistration")}>🡠</button>
+        {currentTab === 0 ?
+        <button onClick={() => router.push("/companyRegistration")}>🡠</button>:
+        <button onClick={()=>{handlePreviousTab()}}>🡠</button>}
         <div className={styles.registerHead}>
           <h5>Register a New Company</h5>
           <p>Provide details to continue.</p>
@@ -115,6 +135,7 @@ export default function RegisterCompany() {
               setCompleted={setThirdCompleted}
             />
           )}
+          {currentTab === 2 && <AdditionalBusinessTab />}
         </div>
       </div>
       <Footer />

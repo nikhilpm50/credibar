@@ -7,6 +7,7 @@ import Algurair from "../../assets/Algurair.png";
 import sayeed from "../../assets/sayeed.png";
 import delmonte from "../../assets/delmonto.png";
 import addbtn from "../../assets/addbtn.png";
+import Link from "next/link";
 
 export default function VerifyMobile() {
   return (
@@ -58,10 +59,12 @@ export default function VerifyMobile() {
                 <input type="radio" name="company" value="Amazon" />
               </div>
               <div className={styles.companyName}>
+                <Link href='/companyList'>
                 <div className={styles.addCompDiv}>
                   <div className={styles.addbtn}><p>+</p></div>
                   <p className={styles.addComp}>Add a new company</p>
                 </div>
+                </Link>
               </div>
             </div>
             <button className={styles.continuebtn}>Continue</button>

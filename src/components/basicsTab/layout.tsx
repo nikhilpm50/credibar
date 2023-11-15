@@ -120,7 +120,7 @@ export default function BasicsTab({ setCompleted, handleNexTab }: Props) {
               control={control}
               render={({ field }) => <input {...field} type={showConfirmPassword ? 'text' : 'password'} />}
             />
-            <Image className={styles.showPassword} src={show} alt="show" onClick={togglePassword} />
+            <Image className={styles.showPassword} src={show} alt="show" onClick={toggleConfirmPassword} />
           </div>
           <p className={styles.passInfo}>
             *At least 8 characters, at least 1 upper case and 1 lower case

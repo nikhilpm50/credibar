@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import register from '../../assets/registerCom.png'
 import doc from '../../assets/document-text.png'
+import Link from 'next/link';
 
 
 export default function CompanyRegistration(){
@@ -54,10 +55,11 @@ export default function CompanyRegistration(){
                         </div>
                     </div>
                 </div>
+                <Link href='/registerCompany'>
                 <div className={styles.trackBtn}>
                     <button>Proceed</button>
                 </div>
- 
+                </Link>
             </div>
             <Footer />
         </div>

@@ -2,7 +2,7 @@ import styles from "./licenseTab.module.css";
 import { useForm, Controller } from "react-hook-form";
 import Image from "next/image";
 import cloud from "../../assets/cloudLogo.png";
-import { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 type MyData = {
@@ -24,6 +24,33 @@ export default function LicenseTab({ setCompleted, handleNexTab }: Props) {
   const [vatCert, setVatCert] = useState<File | null>(null);
   const [shNatID, setShNatID] = useState<File | null>(null);
   const [countryData, setCountryData] = useState<MyData>({ records: [] });
+
+  useEffect(() => {
+    const getCountries = async () => {
+      try {
+        const response = await fetch(
+          "https://credibar-api-dev.e8demo.com/api/user/v1/countries/",
+          {
+            method: "GET",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
+
+        if (response.ok) {
+          let data: MyData = await response.json();
+          console.log(data);
+          setCountryData(data);
+        } else {
+          console.error("Failed to fetch countries");
+        }
+      } catch (error) {
+        console.error("An error occurred while fetching countries", error);
+      }
+    };
+    getCountries();
+  }, []);
 
   const handleImageUploadTradeLicense = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -187,7 +214,9 @@ export default function LicenseTab({ setCompleted, handleNexTab }: Props) {
                   {" "}
                   <option>Select Country</option>
                   {countryData.records.map((data) => (
-                    <option key={data.id} value={data.id}>{data.name}</option>
+                    <option key={data.id} value={data.id}>
+                      {data.name}
+                    </option>
                   ))}
                 </select>
               )}
@@ -386,7 +415,14 @@ export default function LicenseTab({ setCompleted, handleNexTab }: Props) {
             </div>
             <div className={styles.hrLine}></div>
             <div className={styles.continueBtn}>
-              <button type="submit" id={styles.continBtn} onClick={()=>{handleNexTab(); setCompleted(true);}}>
+              <button
+                type="submit"
+                id={styles.continBtn}
+                onClick={() => {
+                  handleNexTab();
+                  setCompleted(true);
+                }}
+              >
                 Continue
               </button>
             </div>

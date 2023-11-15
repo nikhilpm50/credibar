@@ -1,0 +1,112 @@
+.main label {
+  color: #989898;
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 5px;
+  @media screen and (min-width: 1490px) {
+    font-size: 14px;
+  }
+}
+
+.main input {
+  border-radius: 8px;
+  border: 0.5px solid #dadada;
+  background: #fff;
+  height: 48px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  color: #1b1b1b;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  @media screen and (min-width: 1490px) {
+    height: 56px;
+  }
+}
+
+.main select {
+  border-radius: 8px;
+  border: 0.5px solid #dadada;
+  background: #fff;
+  height: 48px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  color: #1b1b1b;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  @media screen and (min-width: 1490px) {
+    height: 56px;
+  }
+}
+
+.main option {
+  color: #989898;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  cursor: pointer();
+}
+
+.main h5 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  margin-bottom: 25px;
+}
+
+.addBox {
+  border-radius: 8px;
+  border: 0.5px solid #d5deea;
+  background: #fff;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1490px) {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.formDiv {
+  display: flex;
+  align-items: flex-end;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+#continueBtn {
+  width: 210px;
+  height: 48px;
+  border-radius: 8px;
+  background: #0077b5;
+  color: #fff;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  @media screen and (min-width: 1490px) {
+    width: 210px;
+    height: 56px;
+  }
+}
