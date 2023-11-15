@@ -1,0 +1,322 @@
+.main {
+  background-color: #fafbff;
+  width: 100%;
+  min-height: 100vh;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 54px 4px rgba(0, 0, 0, 0.05);
+  width: 75%;
+  min-height: 82vh;
+  max-height: max-content;
+  padding: 30px;
+}
+
+.body button {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #b3b3b3;
+  background: transparent;
+  font-size: 28px;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.head h5 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+.head p {
+  color: #8f97a7;
+  font-family: "Soliel", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.head {
+  margin-bottom: 25px;
+}
+
+.searchDiv p {
+  color: #1b1b1b;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+.searchDiv input {
+  border-radius: 8px;
+  border: 0.5px solid #d5deea;
+  background: #fff;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+
+.searchDiv img {
+  position: absolute;
+  right: 11px;
+  top: 12px;
+  width: 25px;
+  height: 25px;
+}
+
+.searchDiv {
+  margin-bottom: 20px;
+}
+
+.leftSection {
+  width: 60%;
+}
+
+.companyList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.companyCard {
+  border-radius: 8px;
+  border: 0.5px solid #d5deea;
+  background: #fff;
+  width: 95%;
+  height: 240px;
+  padding: 15px;
+}
+
+.circleAvatar {
+  background: #f4f4f4;
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.companyHead h5 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  color: #04cb0c;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Soliel", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.claimTag {
+  color: #fdb703;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Soliel", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.claimedTag {
+  color: #2976c2;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Soliel", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.claimTag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.collapse {
+  border: 1px solid #e1e1e1;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hrLine {
+  width: 100%;
+  height: 1px;
+  background: #f1f1f1;
+  margin-top: 20px;
+}
+
+.addressBox {
+  display: flex;
+  gap: 5vw;
+  margin-top: 14px;
+}
+
+.addressBox h5 {
+  color: #bebebe;
+  font-family: "Soliel", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+
+.addressBox p {
+  color: #5f5f60;
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+#claimBtn {
+  border-radius: 6px;
+  background: #0077b5;
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.imageBorder {
+  border-radius: 6px;
+  background: #f4f4f4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.companyCardCollapse {
+  border-radius: 8px;
+  border: 0.5px solid #d5deea;
+  background: #fff;
+  width: 95%;
+  height: 80px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.companyMain {
+  height: 564px;
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+.companyMain::-webkit-scrollbar {
+  width: 2px;
+}
+
+.companyMain::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+.companyMain::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+}
+
+.rightSection {
+  width: 345px;
+  height: 411px;
+  border-radius: 10px;
+  background: #f8f8f8;
+  margin-top: 21px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 15px;
+}
+
+.rightSection h5 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.rightSection p {
+  color: #8f97a7;
+  text-align: center;
+  font-family: "Soliel", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.rightSection button {
+  width: 305px;
+  height: 45px;
+  border-radius: 6px;
+  border: 0.5px solid rgba(0, 119, 181, 0.2);
+  background: rgba(0, 119, 181, 0.1);
+  color: #0077b5;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}

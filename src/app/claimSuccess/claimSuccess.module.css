@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Soliel";
+  src: url("/fonts/SolielRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+  background-color: #fafbff;
+  width: 100%;
+  min-height: 100vh;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 54px 4px rgba(0, 0, 0, 0.05);
+  width: 75%;
+  min-height: 82vh;
+  max-height: max-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.body button {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #b3b3b3;
+  background: transparent;
+  font-size: 28px;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.successText h5 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.successText p {
+  color: #8f97a7;
+  text-align: center;
+  font-family: "Soliel", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.successText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hrLine {
+  background: #efefef;
+  height: 1px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.borderBox {
+  border-radius: 8px;
+  background: rgba(225, 225, 225, 0.2);
+  box-shadow: 0px 3.5px 5.5px 0px rgba(0, 0, 0, 0.02);
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.borderText h5 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 22.4px */
+}
+
+.borderText p {
+  color: #b7b7b7;
+  font-family: "Soliel", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.progressBar {
+  width: 118px;
+  height: 1px;
+  background: #0077b5;
+}
+
+.trackBtn button{
+  color: #fff;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  background: #0077b5;
+  width: 220px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.trackBtn{
+  display: flex;
+  justify-content: center;
+}
+
+.progressDiv{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+
+}
+
+
+

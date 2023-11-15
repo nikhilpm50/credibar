@@ -1,0 +1,186 @@
+.main {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("../../assets/signinBg.jpg");
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  @media screen and (max-height: 800px) {
+    height: fit-content;
+    padding: 20px;
+  }
+}
+
+.logo {
+  margin-bottom: 10px;
+  @media screen and (min-width: 1490px) {
+    margin-top: 30px;
+  }
+}
+
+.container {
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media screen and (max-height: 800px) {
+    height: fit-content;
+  }
+}
+
+.header {
+  padding: 30px;
+  @media screen and (min-width: 1490px) {
+    padding: 80px 80px 0 80px;
+  }
+}
+
+.footer p {
+  color: #bcbcbc;
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.headText h2 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  @media screen and (min-width: 1490px) {
+    font-size: 36px;
+  }
+}
+
+.headText {
+  @media screen and (min-width: 1490px) {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.headText p {
+  color: #8f97a7;
+  font-family: "Soliel", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.stageDiv {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #8f97a7;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.progress {
+  margin-bottom: 30px;
+}
+
+.backBtn {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(7px);
+  border-radius: 50%;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backBtn button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 28px;
+}
+
+.stageDiv p {
+  color: #585858;
+  font-family: "Soliel", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.progressHead h5 {
+  color: #1b1b1b;
+  font-family: Plus Jakarta Sans;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 25.2px */
+  @media screen and (min-width: 1490px) {
+    font-size: 18px;
+  }
+}
+
+.progressHead p {
+  color: #b7b7b7;
+  font-family: "Soliel", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  @media screen and (min-width: 1490px) {
+    font-size: 14px;
+  }
+}
+
+.progressHead {
+  @media screen and (min-width: 1490px) {
+    margin-bottom: 5px;
+  }
+}
+.progressContent {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 13px;
+}
+
+.progressBarDiv {
+  display: flex;
+  gap: 5px;
+  margin-botton: 20px;
+}
+
+.progressBar {
+  border-radius: 50px;
+  background: #eee;
+  height: 4px;
+  width: 35%;
+}
+
+.progressBarActive {
+  background: #0077b5;
+  height: 4px;
+  width: 35%;
+  border-radius: 50px;
+}

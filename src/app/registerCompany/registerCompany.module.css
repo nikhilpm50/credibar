@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Soliel";
+  src: url("/fonts/SolielRegular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+  background-color: #fafbff;
+  width: 100%;
+  min-height: 100vh;
+  max-height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body {
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 0px 54px 4px rgba(0, 0, 0, 0.05);
+  width: 75%;
+  min-height: 82vh;
+  max-height: max-content;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.body button {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: #b3b3b3;
+  background: transparent;
+  font-size: 28px;
+  border: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.registerHead h5 {
+  color: #1b1b1b;
+  font-family: Plus Jakarta Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.hrLine {
+  background: #efefef;
+  height: 1px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.registerHead{
+  margin-bottom: 20px;
+}
+
+.registerHead p {
+  color: #8f97a7;
+  font-family: "Soliel", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.stageDiv {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #8f97a7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .progress {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  
+
+.stageDiv p {
+    color: #585858;
+    font-family: "Soliel", sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  
+  .progressHead h5 {
+    color: #1b1b1b;
+    font-family: Plus Jakarta Sans;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 25.2px */
+    @media screen and (min-width: 1490px) {
+      font-size: 18px;
+    }
+  }
+  
+  .progressHead p {
+    color: #b7b7b7;
+    font-family: "Soliel", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    @media screen and (min-width: 1490px) {
+      font-size: 14px;
+    }
+  }
+  
+  .progressHead {
+    @media screen and (min-width: 1490px) {
+      margin-bottom: 5px;
+    }
+  }
+  .progressContent {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 13px;
+  }
+  
+  .progressBarDiv {
+    display: flex;
+    gap: 5px;
+    margin-botton: 20px;
+  }
+  
+  .progressBar {
+    border-radius: 50px;
+    background: #eee;
+    height: 4px;
+    width: 100%;
+  }
+  
+  .progressBarActive {
+    background: #0077b5;
+    height: 4px;
+    width: 100%;
+    border-radius: 50px;
+  }
+  

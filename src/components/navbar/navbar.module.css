@@ -1,0 +1,48 @@
+.main {
+  border-bottom: 0.5px solid #a9a9a9;
+  background: #fff;
+  height: 88px;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1490px) {
+    height: 75px;
+  }
+}
+
+.navContents {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.profileDetails h5 {
+  color: #2d3748;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.profileDetails p {
+  color: #8f97a7;
+  font-family: "Soliel", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

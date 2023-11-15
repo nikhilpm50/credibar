@@ -1,0 +1,199 @@
+.main {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("../../assets/signinBg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.logo {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1490px) {
+    margin-top: 50px;
+  }
+}
+
+.container {
+  background-color: #ffffff;
+  width: 50%;
+  height: 95%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 30px;
+  @media screen and (min-width: 1490px) {
+    padding: 80px;
+  }
+}
+
+.footer p {
+  color: #bcbcbc;
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.body {
+  padding: 30px;
+  text-align: start;
+  @media screen and (min-width: 1490px) {
+    padding: 80px;
+  }
+}
+
+.title h2 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  @media screen and (min-width: 1490px) {
+    font-size: 36px;
+  }
+}
+
+.title p {
+  color: #8f97a7;
+  font-family: "Soliel", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1490px) {
+    font-size: 18px;
+  }
+}
+
+.compSel {
+  color: #989898;
+  font-family: Plus Jakarta Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  @media screen and (min-width: 1490px) {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+.companyName {
+  border-radius: 8px;
+  border: 0.5px solid #dadada;
+  background: #fff;
+  width: 300px;
+  height: 66px;
+  color: #161616;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+
+  @media screen and (max-width: 1300px) {
+    width: 250px;
+  }
+  @media screen and (min-width: 1490px) {
+    width: 305px;
+    height: 71px;
+  }
+}
+
+.companyName input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  accent-color: white;
+}
+
+.compNameDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.companylist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  @media screen and (min-width: 1490px) {
+    gap: 17px;
+  }
+}
+
+.addbtn {
+  background: #0077b5;
+  width: 43px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 36px;
+  font-weight: 500;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addbtn p {
+  margin-bottom: 8px;
+}
+
+.addComp {
+  color: #161616;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+}
+
+.addCompDiv {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.continuebtn {
+  border-radius: 8px;
+  background: #0077b5;
+  border: none;
+  color: #fff;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 56px;
+  width: 100%;
+  margin-top: 30px;
+  cursor: pointer;
+  @media screen and (min-width: 1490px) {
+    margin-top: 50px;
+  }
+}

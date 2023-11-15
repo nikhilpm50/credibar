@@ -1,0 +1,215 @@
+.body form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .inputDiv {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body label {
+    color: #989898;
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+    @media screen and (min-width: 1490px) {
+      font-size: 14px;
+    }
+  }
+  
+  .body input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2px;
+    opacity: 0.6;
+    filter: invert(1);
+  }
+  
+  .body input {
+    border-radius: 8px;
+    border: 0.5px solid #dadada;
+    background: #fff;
+    height: 48px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    color: #1b1b1b;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    @media screen and (min-width: 1490px) {
+      margin-top: 9px;
+      height: 56px;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .body select {
+    border-radius: 8px;
+    border: 0.5px solid #dadada;
+    background: #fff;
+    height: 48px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    color: #1b1b1b;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    @media screen and (min-width: 1490px) {
+      margin-top: 14px;
+      height: 56px;
+      margin-bottom: 8px;
+    }
+  }
+  
+  .body option {
+    color: #989898;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 21px */
+    cursor: pointer();
+  }
+  
+  .hrLine {
+    background: #efefef;
+    height: 1px;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .uploadCard {
+    border-radius: 10px;
+    background: #fafafa;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  #dragText {
+    color: #2d3748;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy-Medium;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  #supportText {
+    color: #949494;
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: Gilroy-Medium;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .alertMsg {
+    color: #666;
+    font-family: Plus Jakarta Sans;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 14px */
+    margin-bottom: 15px;
+    @media screen and (min-width: 1490px) {
+      margin-bottom: 20px;
+    }
+  }
+  .previewSec {
+    border-radius: 10px;
+    border: 0.5px solid #dadada;
+    background: #fff;
+    width: 116px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  #closeBtn {
+    width: 24px;
+    height: 24px;
+    background: #cf1c1c;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .passportSec {
+    width: 32%;
+    height: 275px;
+  }
+  
+  .passportSec p {
+    color: #989898;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  
+  .uploadSec {
+    width: 100%;
+  }
+  
+  .uploadText {
+    color: #221f20;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+    margin-bottom: 15px;
+  }
+  
+  .continueBtn {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+  }
+  
+  #continBtn {
+    width: 210px;
+    height: 56px;
+    border-radius: 8px;
+    background: #0077b5;
+    color: #fff;
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    margin-bottom: 0;
+  }
+  

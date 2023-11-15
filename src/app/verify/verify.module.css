@@ -1,0 +1,159 @@
+.main {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-image: url("../../assets/signinBg.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+  @media screen and (max-height: 779px) {
+    min-height: 100px;
+    max-height: fit-content;
+  }
+}
+
+.logo {
+  margin-bottom: 20px;
+  @media screen and (min-width: 1490px) {
+    margin-top: 30px;
+  }
+}
+
+.container {
+  background-color: #ffffff;
+  width: 50%;
+  height: 95%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  padding: 30px;
+  @media screen and (min-width: 1490px) {
+    padding: 80px 80px 0 80px;
+  }
+}
+
+.footer p {
+  color: #bcbcbc;
+  font-family: Plus Jakarta Sans;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-left: 5px;
+}
+
+.body {
+  padding: 30px;
+  text-align: start;
+  @media screen and (min-width: 1490px) {
+    padding: 0 80px 80px 80px;
+  }
+}
+
+.body h2 {
+  color: #221f20;
+  font-family: Plus Jakarta Sans;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  @media screen and (min-width: 1490px) {
+    font-size: 36px;
+  }
+}
+
+.body p {
+  color: #8f97a7;
+  font-family: "Soliel", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 5px;
+  margin-top: 6px;
+  @media screen and (min-width: 1490px) {
+    font-size: 18px;
+  }
+}
+
+.otpInput {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+  @media screen and (min-width: 1490px) {
+    margin-top: 47px;
+  }
+}
+
+.otpInput input {
+  border-radius: 10px;
+  border: 0.5px solid #dadada;
+  width: 120px;
+  height: 50px;
+  background: #fafafa;
+  color: #1b1b1b;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  text-align: center;
+  @media screen and (min-width: 1490px) {
+    width: 130px;
+    height: 58px;
+  }
+}
+
+#otpText {
+  color: #757575;
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: end;
+  margin-right: 5px;
+  margin-top: 10px;
+  @media screen and (min-width: 1490px) {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.submitButton {
+}
+
+.resend {
+  color: #0077b5;
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.verifybtn {
+  width: 100%;
+  height: 50px;
+  background: #0077b5;
+  border: none;
+  border-radius: 8px;
+  margin-top: 40px;
+  cursor: pointer;
+  @media screen and (min-width: 1490px) {
+    height: 56px;
+  }
+}
