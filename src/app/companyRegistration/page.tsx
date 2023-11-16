@@ -19,7 +19,7 @@ export default function CompanyRegistration(){
             <div className={styles.body}>
             <button onClick={() => router.push("/claim")}>🡠</button>
                 <div className={styles.successText}>
-                    <Image alt='' src={register} width={228} height={228} />
+                    <Image alt='' src={register} className={styles.regImage} />
                     <h5>Register a new company</h5>
                     <p>Please keep the below documents ready for a smoother company registration process.</p>
                 </div>

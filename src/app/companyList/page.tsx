@@ -13,12 +13,11 @@ import arrowDown from "../../assets/arrow-down.png";
 import profileCircle from "../../assets/profile-circle.png";
 import linkCircle from "../../assets/link-circle.png";
 import flag from "../../assets/flag-2.png";
-import notFound from '../../assets/not-found-img.png'
-import searchIcon from '../../assets/search.png'
+import notFound from "../../assets/not-found-img.png";
+import searchIcon from "../../assets/search.png";
 import Link from "next/link";
 
 export default function CompanyList() {
-  const [collapse, setCollapse] = useState(true);
   const cardDetails = [
     {
       name: "Al Seer Trading Co",
@@ -54,6 +53,16 @@ export default function CompanyList() {
     },
   ];
 
+  const [collapseStates, setCollapseStates] = useState(
+    Array(cardDetails.length).fill(true)
+  );
+
+  const handleCollapseToggle = (index: number) => {
+    const newCollapseStates = [...collapseStates];
+    newCollapseStates[index] = !newCollapseStates[index];
+    setCollapseStates(newCollapseStates);
+  };
+
   return (
     <div className={styles.main}>
       <Navbar />
@@ -66,21 +75,24 @@ export default function CompanyList() {
             company.
           </p>
         </div>
-        <div style={{display: 'flex'}}>
+        <div style={{ display: "flex" }}>
           <div className={styles.leftSection}>
             <div className={styles.searchDiv}>
               <p>Search company</p>
-              <div style={{position : 'relative'}}>
-              <input type="search" />
-              <Image src={searchIcon} alt="" />
+              <div style={{ position: "relative" }}>
+                <input type="search" />
+                <Image src={searchIcon} alt="" />
               </div>
             </div>
             <div className={styles.companyMain}>
               <div className={styles.companyList}>
                 {cardDetails.map((data, idx) => (
-                  <div key={data.name}
+                  <div
+                    key={data.name}
                     className={
-                      collapse ? styles.companyCardCollapse : styles.companyCard
+                      collapseStates[idx]
+                        ? styles.companyCardCollapse
+                        : styles.companyCard
                     }
                   >
                     <div
@@ -122,10 +134,10 @@ export default function CompanyList() {
                       </div>
                       <div className={styles.collapse}>
                         <Image
-                          onClick={() => setCollapse(!collapse)}
+                          onClick={() => handleCollapseToggle(idx)}
                           key={idx}
                           alt=""
-                          src={collapse ? arrowDown : arrowUp}
+                          src={collapseStates[idx] ? arrowDown : arrowUp}
                         />
                       </div>
                     </div>
@@ -153,9 +165,13 @@ export default function CompanyList() {
                       <div className={styles.imageBorder}>
                         <Image alt="" src={linkCircle} />
                       </div>
-                      {data.claim ? '' :
-                      <Link href='/claim'>
-                      <button id={styles.claimBtn}>Claim</button></Link>}
+                      {data.claim ? (
+                        ""
+                      ) : (
+                        <Link href="/claim">
+                          <button id={styles.claimBtn}>Claim</button>
+                        </Link>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -166,8 +182,8 @@ export default function CompanyList() {
             <Image alt="" src={notFound} />
             <h5>Can’t find your business</h5>
             <p>No problem, Request for a new registration</p>
-            <Link href='/companyRegistration'>
-            <button>Register a new company</button>
+            <Link href="/companyRegistration">
+              <button>Register a new company</button>
             </Link>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function ClaimSuccess(){
             <div className={styles.body}>
             <button onClick={() => router.push("/claim")}>🡠</button>
                 <div className={styles.successText}>
-                    <Image alt='' src={success} width={200} height={240} />
+                    <Image alt='' src={success} className={styles.successImage} />
                     <h5>Thank you for claiming !</h5>
                     <p>Your claiming process is undergoing verification. We will notify you once its completed.</p>
                 </div>

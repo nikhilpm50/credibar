@@ -27,6 +27,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  @media screen and (max-width: 15.6in){
+    padding: 10px;
+    min-height: 80vh;
+    max-height: max-content;
+  }
 }
 
 .body button {
@@ -39,6 +44,9 @@
   border: none;
   margin-bottom: 30px;
   cursor: pointer;
+  @media screen and (max-width: 15.6in){
+    margin-bottom: 10px;
+  }
 }
 
 .successText h5 {
@@ -49,6 +57,9 @@
   font-weight: 500;
   line-height: normal;
   margin-bottom: 10px;
+  @media screen and (max-width: 15.6in){
+    font-size: 32px;
+  }
 }
 
 .successText p {
@@ -59,6 +70,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 15.6in){
+    font-size: 16px;
+  }
 }
 
 .successText {
@@ -68,11 +82,23 @@
   align-items: center;
 }
 
+.successImage{
+  width: 200px;
+  height: 240px;
+  @media screen and (max-width: 1490px) {
+      width: 140px;
+      height: 180px;
+    }
+}
+
 .hrLine {
   background: #efefef;
   height: 1px;
   width: 100%;
   margin: 20px 0;
+  @media screen and (max-width: 15.6in){
+    margin: 10px 0;
+  }
 }
 
 .borderBox {
@@ -93,6 +119,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 22.4px */
+  @media screen and (max-width: 15.6in){
+    font-size: 14px;
+  }
 }
 
 .borderText p {
@@ -102,6 +131,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 15.6in){
+    font-size: 12px;
+  }
 }
 
 .progressBar {
@@ -122,6 +154,10 @@
   width: 220px;
   height: 56px;
   cursor: pointer;
+  @media screen and (max-width: 15.6in){
+    font-size: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .trackBtn{
@@ -135,7 +171,9 @@
   gap: 10px;
   justify-content: center;
   margin-bottom: 30px;
-
+  @media screen and (max-width: 15.6in){
+    margin-bottom: 20px;
+  }
 }
 
 

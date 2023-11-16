@@ -11,7 +11,6 @@ export default function VerifyMobile() {
   const { control, handleSubmit } = useForm();
   const router = useRouter();
   const [verifyUrl, setVerifyUrl] = useState('');
-  
 
   useEffect(() => {
     const storedData = localStorage.getItem("signinVerify");
@@ -19,12 +18,31 @@ export default function VerifyMobile() {
     if (storedData) {
       const responseData = JSON.parse(storedData);
       const verificationUrl = responseData.verification_url;
-      console.log(verificationUrl)
       setVerifyUrl(verificationUrl);
     } else {
       console.log("Data not found in localStorage.");
     }
   }, []);
+
+
+  const handleOtpInputChange = (name: string, value: string) => {
+    if (value.length === 1) {
+      const nextInputName = getNextInputName(name);
+      if (nextInputName) {
+        const nextInput = document.getElementsByName(nextInputName)[0] as HTMLInputElement;
+        if (nextInput) {
+          nextInput.focus();
+        }
+      }
+    }
+  };
+
+
+  const getNextInputName = (currentInputName: string) => {
+    const inputIndex = parseInt(currentInputName.charAt(currentInputName.length - 1), 10);
+    const nextInputIndex = inputIndex < 4 ? inputIndex + 1 : null;
+    return nextInputIndex ? `otp${nextInputIndex}` : null;
+  };
 
 
   const onSubmit = async (data: any) => {
@@ -41,17 +59,16 @@ export default function VerifyMobile() {
       if (response.ok) {
         const responseData = await response.json();
         console.log(responseData);
-        router.push('/companySelection')
-        localStorage.removeItem('signinVerify')
+        router.push('/companySelection');
+        localStorage.removeItem('signinVerify');
       } else {
-        // Handle any errors from the API
         console.error("Failed to submit the form");
       }
     } catch (error) {
-      // Handle any network or other errors
       console.error("Error occurred while submitting the form", error);
     }
   };
+
 
   return (
     <div className={styles.main}>
@@ -66,30 +83,25 @@ export default function VerifyMobile() {
           </p>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className={styles.otpInput}>
-              <Controller
-                name="otp1"
-                control={control}
-                defaultValue=""
-                render={({ field }) => <input type="tel"  {...field} />}
-              />
-              <Controller
-                name="otp2"
-                control={control}
-                defaultValue=""
-                render={({ field }) => <input type="tel"  {...field} />}
-              />
-              <Controller
-                name="otp3"
-                control={control}
-                defaultValue=""
-                render={({ field }) => <input type="tel"  {...field} />}
-              />
-              <Controller
-                name="otp4"
-                control={control}
-                defaultValue=""
-                render={({ field }) => <input type="tel"  {...field} />}
-              />
+              {['otp1', 'otp2', 'otp3', 'otp4'].map((inputName) => (
+                <Controller
+                  key={inputName}
+                  name={inputName}
+                  control={control}
+                  defaultValue=""
+                  render={({ field }) => (
+                    <input
+                      type="tel"
+                      {...field}
+                      maxLength={1}
+                      onChange={(e) => {
+                        field.onChange(e);
+                        handleOtpInputChange(inputName, e.target.value);
+                      }}
+                    />
+                  )}
+                />
+              ))}
             </div>
             <div>
               <p id={styles.otpText}>
